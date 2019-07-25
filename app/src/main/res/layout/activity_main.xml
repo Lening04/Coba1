@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenin.coba1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nim" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:layout_marginTop="23dp"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:text="@string/inputnim" />
+
+    <RadioButton
+        android:text="@string/rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioButton" />
+
+    <RadioButton
+        android:text="@string/rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton2"
+        android:layout_below="@+id/editText2"
+        android:layout_toEndOf="@+id/radioButton"
+        android:layout_marginStart="31dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/imageView" />
+
+    <CheckBox
+        android:text="@string/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBox"
+        android:layout_toEndOf="@+id/checkBox"
+        android:layout_marginStart="28dp"
+        android:id="@+id/checkBox3" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox3"
+        android:id="@+id/checkBox4"
+        tools:text="@string/cb4" />
+
+    <CheckBox
+        android:text="@string/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:id="@+id/checkBox"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/radioButton" />
+
+    <CheckBox
+        android:text="@string/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        android:layout_alignBaseline="@+id/checkBox4"
+        android:layout_alignBottom="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox" />
+
+    <Button
+        android:text="@string/simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_marginTop="14dp"
+        android:id="@+id/button" />
+
+</RelativeLayout>
